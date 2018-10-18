@@ -1,0 +1,32 @@
+body
+{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body > #main
+{
+  background: gainsboro;
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+div#img-div
+{
+  height: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+img#img
+{
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
