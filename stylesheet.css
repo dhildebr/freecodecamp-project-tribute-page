@@ -20,6 +20,9 @@ body > #main
   background: rgb(100%, 100%, 100%);
 }
 
+::selection { background: rgb(25%, 25%,  50%); color: rgb(95%, 95%, 97.5%); }
+::-moz-selection { background: rgb(25%, 25%,  50%); color: rgb(95%, 95%, 97.5%); }
+
 /* ################# Top-Level Styling ################## */
 /* ###################################################### */
 /* ################### Floating Title ################### */
@@ -42,7 +45,7 @@ h1#title
   right: 0;
 }
 
-#subtitle
+div#subtitle
 {
   display: block;
   border: 0;
@@ -60,6 +63,20 @@ h1#title
   right: 0;
 }
 
+h1#title::selection,
+div#subtitle::selection
+{
+  background: transparent;
+  text-shadow: 0 0 8pt rgba(10%, 10%, 75%, 100%);
+}
+
+h1#title::-moz-selection,
+div#subtitle::-moz-selection
+{
+  background: transparent;
+  text-shadow: 0 0 8pt rgba(10%, 10%, 75%, 100%);
+}
+
 /* ################### Floating Title ################### */
 /* ###################################################### */
 /* #################### Header Image #################### */
@@ -67,7 +84,7 @@ h1#title
 div#img-div
 {
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 24pt;
   max-width: 1200px;
   width: 100%;
 }
@@ -75,10 +92,16 @@ div#img-div
 img#image
 {
   display: block;
-  height: auto;
   margin: 0 auto;
-  max-width: 1200px;
+  
   width: 100%;
+  max-width: 1200px;
+  height: auto;
+  
+  border-radius: 0 0 10px 10px;
+  
+  user-select: none;
+  -moz-user-select: none;
 }
 
 div#img-caption
@@ -86,6 +109,14 @@ div#img-caption
   font: 12pt "Times New Roman", serif;
   margin: 4pt auto 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 1199px)
+{
+  img#image
+  {
+    border-radius: 0;
+  }
 }
 
 /* #################### Header Image #################### */
