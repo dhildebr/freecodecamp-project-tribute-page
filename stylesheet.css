@@ -1,3 +1,10 @@
+html
+{
+  border: 0;
+  padding; 0;
+  margin: 0;
+}
+
 body
 {
   border: 0;
@@ -13,7 +20,7 @@ body
 body > #main
 {
   border: 0;
-  padding: 0;
+  padding: 0 0 20vh;
   margin: 0 auto;
   max-width: 1600px;
   
@@ -35,7 +42,7 @@ h1#title
   margin: 0;
   
   color: white;
-  font: 400 24pt "Merriweather", serif;
+  font: 700 24pt "Merriweather", serif;
   text-align: center;
   text-shadow: 0 0 8pt rgba(10%,  10%, 10%, 90%);
   
@@ -98,11 +105,12 @@ img#image
   max-width: 1200px;
   height: auto;
   
-  border-radius: 0 0 10px 10px;
-  
   user-select: none;
   -moz-user-select: none;
 }
+
+@media only screen and (min-width: 1201px)
+{ img#image { border-radius: 0 0 10px 10px; } }
 
 div#img-caption
 {
@@ -111,25 +119,78 @@ div#img-caption
   text-align: center;
 }
 
-@media only screen and (max-width: 1199px)
-{
-  img#image
-  {
-    border-radius: 0;
-  }
-}
-
 /* #################### Header Image #################### */
 /* ###################################################### */
 /* #################### Life Events ##################### */
 
-h3
+h3.timeline-heading
 {
   font: 16pt "Times New Roman", serif;
 }
 
-p,
+ol
+{
+  display: block;
+  padding: 0;
+  margin: 0 auto 18pt;
+  
+  width: 100%;
+  max-width: 1000px;
+  
+  list-style: circle outside;
+}
+
 li
 {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0 12pt 4pt 18pt;
+  
+  font: 12pt/1.15em "Times New Roman", serif;
+}
+
+blockquote
+{
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0 auto 16pt;
+  
+  width: 100%;
+  max-width: 1000px;
+}
+
+blockquote > p.quote
+{
+  display: block;
+  box-sizing: border-box;
+  border-left: 4pt solid rgb(95%, 95%, 97.5%);
+  padding: 0 0 0 8pt;
+  margin: 0 auto 8pt;
+  
+  width: calc(100% - 16pt);
+  max-width: 1000px;
+  
   font: 12pt "Times New Roman", serif;
+}
+
+blockquote > p.quote-source
+{
+  display: block;
+  box-sizing: border-box;
+  margin: 0 12pt;
+  
+  width: calc(100% - 24pt);
+  max-width: 1000px;
+  
+  font: 12pt "Times New Roman", serif;
+}
+
+h3.tribute-source
+{
+  font: 16pt "Times New Roman", serif;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
 }
