@@ -3,16 +3,66 @@ body
   border: 0;
   padding: 0;
   margin: 0;
+  
+  background: rgb(95%, 95%, 97.5%);
+  min-height: 100vh;
+  
+  font-size: 0;
 }
 
 body > #main
 {
-  background: gainsboro;
   border: 0;
   padding: 0;
   margin: 0 auto;
   max-width: 1600px;
+  
+  background: rgb(100%, 100%, 100%);
 }
+
+/* ################# Top-Level Styling ################## */
+/* ###################################################### */
+/* ################### Floating Title ################### */
+
+h1#title
+{
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  
+  color: white;
+  font: 400 24pt "Merriweather", serif;
+  text-align: center;
+  text-shadow: 0 0 8pt rgba(10%,  10%, 10%, 90%);
+  
+  position: fixed;
+  top: 4pt;
+  left: 0;
+  right: 0;
+}
+
+#subtitle
+{
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  
+  color: white;
+  font: 300 16pt "Merriweather", serif;
+  text-align: center;
+  text-shadow: 0 0 8pt rgba(10%,  10%, 10%, 90%);
+  
+  position: fixed;
+  top: 36pt;
+  left: 0;
+  right: 0;
+}
+
+/* ################### Floating Title ################### */
+/* ###################################################### */
+/* #################### Header Image #################### */
 
 div#img-div
 {
@@ -29,4 +79,26 @@ img#image
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+}
+
+div#img-caption
+{
+  font: 12pt "Times New Roman", serif;
+  margin: 4pt auto 0;
+  text-align: center;
+}
+
+/* #################### Header Image #################### */
+/* ###################################################### */
+/* #################### Life Events ##################### */
+
+h3
+{
+  font: 16pt "Times New Roman", serif;
+}
+
+p,
+li
+{
+  font: 12pt "Times New Roman", serif;
 }
