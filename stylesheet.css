@@ -116,7 +116,7 @@ img#image
 
 div#img-caption
 {
-  font: 12pt "Times New Roman", serif;
+  font: 400 12pt/1em "Crimson Text", "Times New Roman", serif;
   margin: 4pt auto 0;
   text-align: center;
 }
@@ -127,7 +127,7 @@ div#img-caption
 
 h3.timeline-heading
 {
-  font: 18pt "Times New Roman", serif;
+  font: 600 18pt "Crimson Text", "Times New Roman", serif;
 }
 
 ol
@@ -149,7 +149,7 @@ li
   padding: 0;
   margin: 0 12pt 4pt 18pt;
   
-  font: 15pt/1.15em "Times New Roman", serif;
+  font: 15pt/1.15em "Crimson Text", "Times New Roman", serif;
 }
 
 blockquote
@@ -174,7 +174,7 @@ blockquote > p.quote
   width: calc(100% - 16pt);
   max-width: 1000px;
   
-  font: 12pt "Times New Roman", serif;
+  font: 400 12pt/1.15em "Cormorant Upright", "Times New Roman", serif;
 }
 
 blockquote > p.quote-source
@@ -186,12 +186,12 @@ blockquote > p.quote-source
   width: calc(100% - 24pt);
   max-width: 1000px;
   
-  font: 12pt "Times New Roman", serif;
+  font: 400 12pt/1em "Crimson Text", "Times New Roman", serif;
 }
 
 h3.tribute-source
 {
-  font: 16pt "Times New Roman", serif;
+  font: 600 16pt/1em "Crimson Text", "Times New Roman", serif;
   margin: 0 auto;
   text-align: center;
   width: 80%;
@@ -205,7 +205,8 @@ a:visited
   text-decoration: none;
 }
 
-a:hover
+a:hover,
+a:focus
 {
   color: rgb(25%, 25%, 90%);
   text-decoration: underline;
