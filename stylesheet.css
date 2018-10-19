@@ -75,7 +75,7 @@ div#subtitle::selection
 {
   background: transparent;
   color: rgb(95%, 95%, 97.5%);
-  text-shadow: 0 0 8pt rgba(10%, 10%, 75%, 100%);
+  text-shadow: 0 0 8pt rgb(10%, 10%, 75%);
 }
 
 h1#title::-moz-selection,
@@ -83,7 +83,7 @@ div#subtitle::-moz-selection
 {
   background: transparent;
   color: rgb(95%, 95%, 97.5%);
-  text-shadow: 0 0 8pt rgba(10%, 10%, 75%, 100%);
+  text-shadow: 0 0 8pt rgb(10%, 10%, 75%);
 }
 
 /* ################### Floating Title ################### */
@@ -195,4 +195,25 @@ h3.tribute-source
   margin: 0 auto;
   text-align: center;
   width: 80%;
+}
+
+a,
+a:link,
+a:visited
+{
+  color: rgb(10%, 10%, 75%);
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: rgb(25%, 25%, 90%);
+  text-decoration: underline;
+}
+
+a:active
+{
+  position: relative;
+  top: 1pt;
+  left: 1pt;
 }
