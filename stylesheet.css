@@ -46,7 +46,7 @@ h1#title
   text-align: center;
   text-shadow: 0 0 8pt rgba(10%,  10%, 10%, 90%);
   
-  position: fixed;
+  position: absolute;
   top: 4pt;
   left: 0;
   right: 0;
@@ -64,7 +64,7 @@ div#subtitle
   text-align: center;
   text-shadow: 0 0 8pt rgba(10%,  10%, 10%, 90%);
   
-  position: fixed;
+  position: absolute;
   top: 36pt;
   left: 0;
   right: 0;
@@ -74,6 +74,7 @@ h1#title::selection,
 div#subtitle::selection
 {
   background: transparent;
+  color: rgb(95%, 95%, 97.5%);
   text-shadow: 0 0 8pt rgba(10%, 10%, 75%, 100%);
 }
 
@@ -81,6 +82,7 @@ h1#title::-moz-selection,
 div#subtitle::-moz-selection
 {
   background: transparent;
+  color: rgb(95%, 95%, 97.5%);
   text-shadow: 0 0 8pt rgba(10%, 10%, 75%, 100%);
 }
 
@@ -125,7 +127,7 @@ div#img-caption
 
 h3.timeline-heading
 {
-  font: 16pt "Times New Roman", serif;
+  font: 18pt "Times New Roman", serif;
 }
 
 ol
@@ -147,7 +149,7 @@ li
   padding: 0;
   margin: 0 12pt 4pt 18pt;
   
-  font: 12pt/1.15em "Times New Roman", serif;
+  font: 15pt/1.15em "Times New Roman", serif;
 }
 
 blockquote
